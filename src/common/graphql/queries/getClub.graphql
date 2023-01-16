@@ -1,0 +1,5 @@
+query GetClub($shortName: String!) {
+    club(shortName: $shortName) {
+        ...ClubFields
+    }
+}

@@ -1,0 +1,5 @@
+query GetProfileSnippet($id: Float) {
+    accounts(id: $id) {
+        ...SimplifiedProfileFields
+    }
+}

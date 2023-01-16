@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .primary {
+        @apply bg-blue-700 text-white;
+    }
+
+    .primary-hover {
+        @apply hover:bg-blue-800
+    }
+
+    .primary-disabled {
+        @apply bg-blue-500 text-white;
+    }
+
+    .fg-item {
+        @apply bg-white border-gray-300 border rounded-md;
+    }
+
+    .label {
+        @apply font-bold select-none;
+    }
+
+    .form-group {
+        @apply flex flex-col;
+    }
+
+    .input-text {
+        @apply fg-item focus:ring-blue-700 block w-full h-8 px-2 mb-4 rounded-md border-gray-300 border
+    }
+
+    .button {
+        @apply py-2 px-4 font-semibold rounded-md cursor-pointer
+    }
+
+    .sidebar-option {
+        @apply select-none px-4 py-1 hover:bg-gray-100 cursor-pointer font-medium
+    }
+
+    .primary-button {
+        @apply primary primary-hover button
+    }
+
+    .error-alert {
+        @apply bg-red-100 border border-red-500 text-red-500 rounded-md px-4 py-2 text-sm mb-4
+    }
+}

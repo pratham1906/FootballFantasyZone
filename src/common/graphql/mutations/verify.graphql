@@ -1,0 +1,18 @@
+mutation Verify($email: String!, $code: String!) {
+    verify(email: $email, code: $code) {
+        error {
+            fieldError {
+                field
+                message
+            }
+
+            formError {
+                message
+            }
+        }
+
+        account {
+            ...AccountFields
+        }
+    }
+}

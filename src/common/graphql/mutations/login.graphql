@@ -1,0 +1,18 @@
+mutation Login($options: LoginInput!) {
+    login(options: $options) {
+        error {
+            fieldError {
+                field
+                message
+            }
+
+            formError {
+                message
+            }
+        }
+
+        account {
+            ...AccountFields
+        }
+    }
+}

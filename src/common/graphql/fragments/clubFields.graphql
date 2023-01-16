@@ -1,0 +1,20 @@
+fragment ClubFields on Club {
+    name
+    shortName
+    points
+    strength
+    strengthOverallHome
+    strengthOverallAway
+    strengthAttackHome
+    strengthAttackAway
+    strengthDefenceHome
+    strengthDefenceAway
+    crestLocation
+    socialMedia {
+        facebook
+        instagram
+        twitter
+        youtube
+        tiktok
+    }
+}

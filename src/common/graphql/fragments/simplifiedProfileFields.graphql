@@ -1,0 +1,6 @@
+fragment SimplifiedProfileFields on Account {
+    id
+    username
+    name
+    avatarLocation
+}

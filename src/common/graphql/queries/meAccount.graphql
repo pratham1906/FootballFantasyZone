@@ -1,0 +1,5 @@
+query MeAccount {
+    me {
+        ...AccountFields
+    }
+}

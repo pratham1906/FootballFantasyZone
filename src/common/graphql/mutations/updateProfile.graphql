@@ -1,0 +1,18 @@
+mutation UpdateProfile($name: String, $bio: String, $favouriteTeam: String) {
+    updateAccount(options: { name: $name, bio: $bio, favouriteTeam: $favouriteTeam }) {
+        error { 
+            fieldError {
+                field
+                message
+            }
+
+            formError { 
+                message
+            }
+        }
+
+        account {
+            ...ProfileFields
+        }
+    }
+}
